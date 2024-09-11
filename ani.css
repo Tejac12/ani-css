@@ -1,0 +1,49 @@
+table{
+    text-align: center;
+    border-collapse: collapse;
+    height: 600px;
+}
+.box img{
+    animation-name: rotateimg;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+
+}
+@keyframes rotateimg{
+    10%{
+        transform: translateX(200px) rotate(360deg);
+    }
+}
+    
+.box1 img{
+    animation-name: rotateimg;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    animation-timing-function:ease-in ;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+}
+@keyframes rotateimg{
+    60%{
+        border-radius: 30px;
+        transform: translateX(250px) rotate(360deg);
+    }
+}
+
+.box2 img{
+    animation: both;
+    animation-name: rolling;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes rolling{
+    40%{
+        transform: translateY(300px) rotate(180deg);
+    }
+}
